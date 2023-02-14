@@ -1,0 +1,16 @@
+import { DELETEMOVIE } from "../consts/MoviesConst";
+import {dataMovies} from "../../Data"
+const initialState={Movies:dataMovies}
+
+export const MovieReducer=(state,{type,payload})=>{
+    switch (type) {
+        case DELETEMOVIE:
+            return {...state}
+
+            
+            break;
+    
+        default:
+            break;
+    }
+}
